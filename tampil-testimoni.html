@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Usaha Buku</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+
+
+
+</head>
+<body>
+
+   <header style="
+    position: relative;
+    height: 350px;
+    background: linear-gradient(to bottom, #6ec6ff, #ffffff);
+    font-family: Georgia, serif;
+    overflow: hidden;
+    text-align: center;
+    color: #01579B;
+">
+
+    <!-- Awan dekorasi -->
+    <div style="position:absolute; top:40px; left:80px; font-size:60px;">☁️</div>
+    <div style="position:absolute; top:70px; right:120px; font-size:50px;">☁️</div>
+    <div style="position:absolute; bottom:60px; left:200px; font-size:45px;">☁️</div>
+    <div style="position:absolute; bottom:80px; right:250px; font-size:55px;">☁️</div>
+
+    <!-- Konten utama -->
+    <div style="
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    ">
+        <h1 style="
+            margin: 0;
+            font-size: 56px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+        ">
+            Anindya Book Haven
+        </h1>
+
+        <hr style="
+            width: 200px;
+            border: 2px solid #ffffff;
+            margin: 15px auto;
+        ">
+
+        <p style="
+            font-size: 20px;
+            color: #04364A;
+            background-color: rgba(255,255,255,0.7);
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 25px;
+        ">
+            Dunia Buku dalam Balutan Langit Biru
+        </p>
+    </div>
+
+</header>
+<nav>
+<a href="index.html">Beranda</a>
+<a href="produk.html">Produk</a>
+<a href="bedah-buku.html">Bedah Buku</a>
+<a href="testimoni.html">Testimoni</a>
+<a href="tampil-testimoni.html">Testimoni Pembeli</a>
+ </nav>  
+
+ <main class="formulir">
+ <h2>Testimoni-testimoni pembeli </h2>
+ <div id="daftarTestimoni"></div>
+ <button id="hapusSemua">Hapus Semua Testimoni</button>
+
+<section>
+    <div id="daftarTestimoni"></div>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Anindya Book Haven</p>
+</footer>
+
+<script>
+    const container = document.getElementById('daftarTestimoni');
+    const testimoniList = JSON.parse(localStorage.getItem('testimoniList')) || [];
+
+    if (testimoniList.length === 0) {container.innerHTML = "<p>Belum ada testimoni.</p>";
+} else {
+        testimoniList.forEach((t, i) => {
+            const el = document.createElement('div');
+            el.className = 'testimoni-box';
+            el.innerHTML = `
+            <p><strong>Nama:</strong>${t.nama}</p>
+            <p><strong>Asal Sekolah/Instansi/Komunitas:</strong>${t.asal}</p>
+            <p><strong>Email:</strong>${t.email}</p>
+            <p><strong>Judul Buku yang Dibeli:</strong>${t.judul}</p>
+            <p><strong>Rating:</strong>${t.rating}</p>
+            <p><strong>Testimoni Anda:</strong>${t.testimoni}</p>
+            `;
+            container.appendChild(el);
+        });
+    }
+    document.getElementById("hapusSemua").addEventListener("click", function() {
+        const konfirmasi = confirm("Apakah Anda yakin ingin menghapus semua testimoni?");
+        if (konfirmasi) {
+            localStorage.removeItem("testimoniList");
+            location.reload();
+        }
+    });
+    
+</script>
+</body>
+</html>
+
+
+
