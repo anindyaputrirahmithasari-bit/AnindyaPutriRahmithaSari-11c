@@ -173,3 +173,83 @@ form button {
 form button:hover {
     background: #01579B;
 }
+
+.footer{
+    background: linear-gradient(to right, #01579B, #1e90ff);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer{
+    background: linear-gradient(to right, #01579B, #1e90ff);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.navbar{
+    background: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #01579B;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #1e90ff;
+}
+
+.navbar{
+    background: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #01579B;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #1e90ff;
+}
+
+.back-home {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(to right, #6ec6ff, #2196f3);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.btn-back:hover {
+    background: linear-gradient(to right, #2196f3, #0d47a1);
+    transform: translateY(-3px);
+}
