@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Usaha Buku</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+
+
+
+</head>
+<body>
+     <header style="
+    position: relative;
+    height: 350px;
+    background: linear-gradient(to bottom, #6ec6ff, #ffffff);
+    font-family: Georgia, serif;
+    overflow: hidden;
+    text-align: center;
+    color: #01579B;
+">
+
+    <!-- Awan dekorasi -->
+    <div style="position:absolute; top:40px; left:80px; font-size:60px;">☁️</div>
+    <div style="position:absolute; top:70px; right:120px; font-size:50px;">☁️</div>
+    <div style="position:absolute; bottom:60px; left:200px; font-size:45px;">☁️</div>
+    <div style="position:absolute; bottom:80px; right:250px; font-size:55px;">☁️</div>
+
+    <!-- Konten utama -->
+    <div style="
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    ">
+        <h1 style="
+            margin: 0;
+            font-size: 56px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+        ">
+            Anindya Book Haven
+        </h1>
+
+        <hr style="
+            width: 200px;
+            border: 2px solid #ffffff;
+            margin: 15px auto;
+        ">
+
+        <p style="
+            font-size: 20px;
+            color: #04364A;
+            background-color: rgba(255,255,255,0.7);
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 25px;
+        ">
+            Dunia Buku dalam Balutan Langit Biru
+        </p>
+    </div>
+      </header>
+
+<nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="bedah-buku.html">Bedah Buku</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="tampil-testimoni.html">Testimoni Pembeli</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="event.html">Event</a>
+</nav>   
+
+ <section style="
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-family: Georgia, serif;
+    color: #04364A;
+    text-align: center;
+">
+
+    <h2 style="
+        color: #0d47a1;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    ">
+        📍 Alamat Toko
+    </h2>
+
+    <p style="line-height: 1.8; font-size: 18px;">
+        <strong>No. 256, Blue Sky Avenue</strong><br>
+        Liwan District<br>
+        Guangzhou, Guangdong<br>
+        China
+    </p>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=No.+256+Blue+Sky+Avenue+Liwan+District+Guangzhou+Guangdong+China"
+       target="_blank"
+       style="
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background-color: #0288D1;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+       "
+       onmouseover="this.style.backgroundColor='#01579B'"
+       onmouseout="this.style.backgroundColor='#0288D1'">
+        🌍 Lihat di Google Maps
+    </a>
+
+</section>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg1:#a7d8ff;
+    --bg2:#ffffff;
+    --text:#0d3b66;
+    --card:rgba(255,255,255,0.4);
+}
+
+body.dark{
+    --bg1:#0f2027;
+    --bg2:#203a43;
+    --text:#ffffff;
+    --card:rgba(255,255,255,0.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,var(--bg1),var(--bg2));
+    transition:0.5s;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:80px 20px;
+    color:var(--text);
+    position:relative;
+    overflow:hidden;
+}
+
+header h1{
+    font-size:48px;
+    letter-spacing:2px;
+}
+
+header p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* DARK MODE BUTTON */
+.toggle{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* CLOUD */
+.cloud{
+    position:absolute;
+    font-size:40px;
+    animation:cloudMove 60s linear infinite;
+    opacity:0.6;
+}
+
+.cloud1{ top:20px; left:-50px;}
+.cloud2{ top:120px; left:-100px; animation-duration:90s;}
+
+@keyframes cloudMove{
+    from{transform:translateX(0);}
+    to{transform:translateX(120vw);}
+}
+
+/* NAV */
+nav{
+    text-align:center;
+    padding:15px;
+    background:rgba(255,255,255,0.7);
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 12px;
+    color:var(--text);
+    font-weight:500;
+}
+
+/* SECTION */
+.section{
+    display:flex;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.container{
+    background:var(--card);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    width:100%;
+    max-width:420px;
+    border-radius:25px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.15);
+    color:var(--text);
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:100px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#1e90ff,#00bfff);
+    color:white;
+    font-weight:500;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    header h1{font-size:32px;}
+    .container{padding:25px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <button class="toggle" onclick="toggleDark()">🌙 Mode</button>
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <h1>Anindya Book Haven</h1>
+    <p>Dunia Buku dalam Balutan Langit Biru</p>
+</header>
+
+<section class="section">
+    <div class="container">
+        <h2>Hubungi Kami</h2>
+
+        <!-- FORM KIRIM KE EMAIL -->
+        <form action="https://formsubmit.co/emailkamu@email.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <div class="input-group">
+                <input type="text" name="nama" placeholder="Nama Lengkap" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <textarea name="pesan" placeholder="Pesan Anda..." required></textarea>
+            </div>
+
+            <button type="submit">Kirim Pesan ✨</button>
+        </form>
+
+    </div>
+</section>
+
+<script>
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+</script>
+<section class="info-kontak">
+    <h2>Informasi Kontak</h2>
+
+    <div class="kontak-item">
+        <strong>📍 Alamat:</strong>
+        <p>No. 19 Happy Market Lane, Haizhu District, Guangzhou, Guangdong, China</p>
+    </div>
+
+    <div class="kontak-item">
+        <strong>📞 Telepon:</strong>
+        <p>+62 812-3456-7890</p>
+    </div>
+
+    <div class="kontak-item">
+        <strong>📧 Email:</strong>
+        <p>anindyabookhaven@email.com</p>
+    </div>
+
+    <div class="kontak-item">
+        <strong>🕒 Jam Operasional:</strong>
+        <p>Senin - Sabtu : 08.00 - 20.00</p>
+        <p>Minggu : 09.00 - 17.00</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 Anindya Book Haven</p>
+</footer>
+
+</body>
+</html>
